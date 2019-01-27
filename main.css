@@ -1,0 +1,324 @@
+/* Style the navigation bar */
+
+.navbar {
+  width: 100%;
+  background-color: #FFFFFF;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:nth-child(2){
+  margin-top: 15px;
+  margin-left: 20px;
+  color: #000000;
+}
+
+.navbar a:nth-child(3){
+  margin-top: 15px;
+  margin-left: 20px;
+  color: #000000;
+}
+.navbar a:nth-child(4){
+  margin-top: 15px;
+  margin-left: 20px;
+  color: #000000;
+
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Current/active navbar link */
+.navbar .active {
+  text-decoration: underline;
+}
+
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  #content2{
+      margin: 90px 0 30px 0px;
+      padding: 20px 0px;
+      width: 380px;
+  }
+  table{
+    margin:30px 0px 20px 0px;
+    border-top:2px solid #015287;
+    width:320px;
+  }
+}
+
+
+.image {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.centered {
+	  position: absolute;
+    top: 45%;
+    left: 35%;
+}
+
+.centered input[type=text] {
+
+    height: 45px;
+    width: 200px;
+    color: #000000;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    resize: vertical;
+
+}
+.centered1 {
+	  position: absolute;
+    top: 46%;
+    left: 50%;
+}
+
+.centered1 input[type=Date] {
+    height: 45px;
+    width: 200px;
+    color: #000000;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.centered2 {
+	  position: absolute;
+    top: 57%;
+    left: 44%;
+
+}
+.centered2 button{
+    height: 35px;
+    width: 150px;
+    color: #000000;
+    background-color:  #ccd9ff;
+    font-size: 15px;
+    resize: vertical;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main img{
+    height: 300px;
+    width: 99.9%;
+    margin-top: 0px;
+}
+div.locations:hover{
+  border: 1px solid #777;
+}
+
+div.locations{
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-left: 25px;
+  width: 30.20%;
+}
+
+div.locations img{
+  height: 300px;
+}
+
+div.desc{
+  clear: inherit;
+  padding: 15px;
+  text-align: left;
+  font-size: 1em;
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+
+article h2{
+  font-family: 'Righteous', cursive;
+}
+
+.box p{
+  font-size: 1.3em;
+  color: #FFFFFF;
+  font-family: 'Playfair Display' , serif;
+}
+
+.article p{
+  font-size: 1.3em;
+  color: #FFFFFF;
+  font-family: 'Playfair Display' , serif;
+}
+
+div.locations1:hover{
+  border: 1px solid #777;
+}
+
+div.locations1{
+  clear: left;
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-left: 25px;
+  width: 30.20%;
+
+}
+
+div.locations1 img{
+  height: 300px;
+}
+
+div.desc1{
+  clear: inherit;
+  padding: 15px;
+  text-align: left;
+  font-size: 1em;
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+
+#content2 {
+
+	margin: 40px 0 30px 10px;
+	padding: 20px 35px;
+	/*width: 600px;*/
+	height: 400px;
+	float: left;
+	/* rounded corner */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+.fling-minislide {
+	height:400px;
+  margin-left: 10px;
+	overflow:hidden;
+	position:relative;
+}
+
+/* animation is set for 20 seconds and it goes on ad infinitum */
+.fling-minislide img{
+	position:absolute;
+	animation:fling-minislide 20s infinite;
+	opacity:0;
+	width: 100%;
+	height: 400px;
+}
+
+@keyframes fling-minislide {
+	25%{opacity:1;} 40%{opacity:0;}
+}
+
+.fling-minislide img:nth-child(4){
+	animation-delay:0s;
+}
+
+.fling-minislide img:nth-child(3){
+	animation-delay:5s;
+}
+
+.fling-minislide img:nth-child(2){
+	animation-delay:10s;
+}
+
+.fling-minislide img:nth-child(1){
+	animation-delay:15s;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical ;
+}
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical ;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    float: left;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+table, th, td {
+	border: 1px solid black;
+  text-align: center;
+
+	}
+  th{
+    background-color: #C0C0C0;
+  }
+
+  table {
+  	/*border-collapse:separate;*/
+  	border-collapse: collapse;
+  	font-size:20px;
+  	margin:30px 20px 20px 0px;
+  	border-top:2px solid #015287;
+
+  }
